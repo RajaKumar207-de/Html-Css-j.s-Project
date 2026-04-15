@@ -1,0 +1,75 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Student Registration</title>
+  <link rel="stylesheet" href="project3.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h1 class="school-name">St.Joseph School</h1>
+    <h2>Student Registration</h2>
+
+    <form>
+      <div class="row">
+        <div class="input-group">
+          <label>First Name</label>
+          <input type="text" required>
+        </div>
+
+        <div class="input-group">
+          <label>Last Name</label>
+          <input type="text" required>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" required>
+      </div>
+
+      <div class="row">
+        <div class="input-group">
+          <label>Class</label>
+          <select required>
+            <option value="">Select</option>
+            <option>6th</option>
+            <option>7th</option>
+            <option>8th</option>
+            <option>9th</option>
+            <option>10th</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label>Section</label>
+          <select required>
+            <option value="">Select</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label>Date of Birth</label>
+        <input type="date" required>
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" required>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
+
