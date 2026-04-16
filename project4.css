@@ -1,0 +1,166 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-image: url(https://i.pinimg.com/736x/a3/db/94/a3db9414ffe68937f49311b2c58c28c5.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+/* Signup Box */
+.signup-box {
+  background-image: url(https://i.pinimg.com/1200x/de/93/11/de9311bcf611be1df963fc721ff94b31.jpg);
+  border: 1px solid #dbdbdb;
+  padding: 30px 25px;
+  margin-bottom: 10px;
+background-size: cover;
+  transition: 0.1s ease;
+}
+
+
+.signup-box:hover {
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+
+.logo {
+  font-family: cursive;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+
+.subtitle {
+  font-size: 14px;
+  color: #ed0707;
+  margin-bottom: 15px;
+}
+
+/* Facebook Button */
+.fb-btn {
+  width: 100%;
+  padding: 8px;
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.fb-btn:hover {
+  background: #0f5dc0;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #dbdbdb;
+}
+
+.divider span {
+  margin: 0 10px;
+  font-size: 12px;
+  color: #0637fc;
+}
+
+/* Inputs */
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  font-size: 13px;
+
+  transition: 0.2s;
+}
+
+
+form input:hover {
+  border-color: #999;
+}
+
+/* Signup Button */
+.signup-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+
+  background: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  background: #007cd1;
+}
+
+/*  Terms Box */
+.terms {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #8e8e8e;
+
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+/* Login Box */
+.login-box {
+  background: white;
+  border: 1px solid #dbdbdb;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.login-box a {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*  Responsive */
+@media (max-width: 400px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .signup-box {
+    padding: 20px;
+  }
+}
