@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+    url(https://i.pinimg.com/1200x/da/e8/b8/dae8b8d10e5a31b704be9fb0ad874afa.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.logo {
+    width: 110px;
+    margin-top: 18px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-btn {
+    text-decoration: none !important;
+    border-radius: 30px;
+    padding: 7px 20px;
+    color: #fff !important;
+    background: #107afd;
+    font-weight: 600;
+}
+
+
+.movie-details {
+    margin: 3% 0;
+}
+
+.left-box {
+    color: #fff;
+    padding: 20px;
+}
+
+.casting img {
+    height: 120px;
+    width: 120px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.casting img:hover{
+    transform:scale(1.1) ;
+}
+
+
+.left-box a {
+    text-decoration: none !important;
+    border-radius: 30px;
+    padding: 7px 20px;
+    margin-top: 20px;
+    color: #fff !important;
+    background: #107afd;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+.left-box a:hover {
+    transform: translateY(-3px);
+    background: #0b5ed7;
+}
+
+.download-btn {
+    border: 1px solid #fff !important;
+    background: transparent !important;
+}
+
+
+.movie-img  {
+    height: 450px;
+    box-shadow: -4px 4px 5px 0 #000;
+     transition: 0.3s;
+}
+.movie-img :hover {
+    transform:scale(1.1) ;
+}
+     
+
+
+
+
+.series h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.series img {
+    width: 100%;
+    margin-top: 15px;
+    box-shadow: -4px 4px 5px 0 #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.series img:hover {
+    transform: translateY(-20px);
+}
