@@ -1,108 +1,149 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-    url(https://i.pinimg.com/1200x/da/e8/b8/dae8b8d10e5a31b704be9fb0ad874afa.jpg);
-    background-position: center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+    url(https://assets.nflxext.com/ffe/siteui/vlv3/5efeb1fd-55d2-4799-8d38-e59e15858b9c/web/IN-en-20260427-TRIFECTA-perspective_0933b420-0cb6-4e67-8e9d-3224dc64b517_large.jpg);
     background-size: cover;
+    color: #fff;
 }
 
-
-.logo {
-    width: 110px;
-    margin-top: 18px;
-}
-
+/* HEADER */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top:0;
+    z-index: 1000;
 }
 
+.logo {
+    width: 180px;
+    object-fit: contain;
+}
+
+/* ACCOUNT BUTTON */
 .header-btn {
-    text-decoration: none !important;
-    border-radius: 30px;
-    padding: 7px 20px;
-    color: #fff !important;
-    background: #107afd;
+    height: 40px;
+    width: 130px;
+    background: #e50914;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
     font-weight: 600;
+    color: #fff !important;
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+    top: 0;
 }
 
+.header-btn:hover {
+    background: #b20710;
+    transform: scale(1.05);
+}
 
+/* MOVIE SECTION */
 .movie-details {
-    margin: 3% 0;
+    padding: 60px 40px;
+    min-height: 90vh;
 }
 
 .left-box {
-    color: #fff;
-    padding: 20px;
+    padding: 40px;
 }
 
+.left-box h1 {
+    color: #ffffff
+    ;
+    font-size: 80px;
+    font-weight: 700;
+}
+.left-box p{
+    color: #d1d1d1;      /* thoda light gray (Netflix style) */
+    font-size: 30px;     /* normal text bada */
+    line-height: 1.6;
+}
+.left-box p:nth-of-type(2) {
+    color: #fff;         /* "Cast:" ko highlight */
+    font-size: 40px;
+    font-weight: 650;
+}
+
+/* CASTING */
 .casting img {
-    height: 120px;
-    width: 120px;
-    margin-right: 10px;
+    height: 180px;
+    width: 180px;
     border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.casting img:hover{
-    transform:scale(1.1) ;
-}
-
-
-.left-box a {
-    text-decoration: none !important;
-    border-radius: 30px;
-    padding: 7px 20px;
-    margin-top: 20px;
-    color: #fff !important;
-    background: #107afd;
-    font-weight: 600;
-    display: inline-block;
     margin-right: 10px;
     transition: 0.3s;
 }
+
+.casting img:hover {
+    transform: scale(1.1);
+}
+
+/* BUTTONS */
+.left-box a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    background: #e50914;
+    color: #fff !important;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
 .left-box a:hover {
     transform: translateY(-3px);
-    background: #0b5ed7;
 }
 
-.download-btn {
-    border: 1px solid #fff !important;
-    background: transparent !important;
+/* IMAGE RIGHT SIDE */
+.movie-img {
+    height: 650px;
+    width: 650px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    transition: 0.3s;
 }
 
-
-.movie-img  {
-    height: 450px;
-    box-shadow: -4px 4px 5px 0 #000;
-     transition: 0.3s;
+.movie-img:hover {
+    transform: scale(1.05);
 }
-.movie-img :hover {
-    transform:scale(1.1) ;
+
+/* SERIES */
+.series {
+    padding: 20px 40px;
 }
-     
-
-
-
 
 .series h3 {
     color: #fff;
-    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-left: 5px solid #e50914;
+    padding-left: 10px;
 }
 
 .series img {
     width: 100%;
-    margin-top: 15px;
-    box-shadow: -4px 4px 5px 0 #000;
-    cursor: pointer;
-    transition: 0.5s;
+    border-radius: 10px;
+    transition: 0.4s;
 }
 
 .series img:hover {
-    transform: translateY(-20px);
+    transform: scale(1.1);
+}
+
+/* FULL WIDTH FIX */
+.container {
+    max-width: 100% !important;
 }
