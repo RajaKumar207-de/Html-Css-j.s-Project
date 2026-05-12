@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+:root{
+    /* --red:green; */
+    --x:200px;
+    --y:200px;
+
+}
+body{
+    background-image: url(https://i.pinimg.com/1200x/97/53/d0/9753d0c273acd5225f0858c87508c76b.jpg);
+background-size:cover;
+background-position: center;
+overflow: hidden;
+}
+.box{
+    height: 100%;
+    width: 100%;
+    /* background-color: var(--red); */
+    /* border: 1px solid red; */
+     background: radial-gradient(
+        500px  at var(--x) var(--y),
+        transparent 10%,
+        rgba(0,0,0,0.9) 40%);
+}
